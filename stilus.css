@@ -16,6 +16,69 @@
     height: 45px;
 }
 
+.body1{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    background: rgb(255, 230, 0);
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+ul li{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover{
+    background: rgb(235, 235, 235);
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(255, 230, 0);
+    text-align: right;
+    box-sizing: border-box;
+    color: black;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width:768px){
+    .toggle{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+
+    ul li{
+        display: block;
+        text-align: center;
+    }
+    .active{
+        display: block;
+    }
+}
+
 .cim{
     position: relative;
     top: -4px;
@@ -49,14 +112,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 690px;
 }
 .card{
     background-color: white;
     width: 370px;
     height: 550px;
     margin: 10px;
-    border-radius: 10px;
     box-shadow: 5px 5px rgb(224, 224, 224);
 }
 #kakukktojas{
@@ -226,11 +287,11 @@ p9{
     background-color: rgb(255, 230, 0);
     display: flex;
     position: relative;
-    top: 50px;
+    top: 20px;
     left: -1134px;
     right: -2px;
     flex-wrap: wrap;
-    height: 75px;
+    height: 250px;
     width: 1857px;
 }
 
@@ -238,6 +299,6 @@ p9{
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
-    left: 365px;
+    left: 360px;
     right: -2px;
 }
